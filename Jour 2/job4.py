@@ -9,7 +9,7 @@ mydb=mysql.connector.connect(
 mycursor=mydb.cursor()
 
 mycursor.execute("USE laplateforme")
-mycursor.execute("SELECT * FROM etudiant")
+mycursor.execute("SELECT nom, capacite FROM salle")
 
 for i in mycursor:
     print(i)
